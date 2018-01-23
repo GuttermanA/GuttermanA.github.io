@@ -189,12 +189,26 @@ While many SQL needs in ruby can be fulfilled by ActiveRecord, there may come a 
 
  **SQLite**
 {% highlight ruby %}
-DB_connection.execute("SELECT * FROM table WHERE attribute1 = ? AND attribute2 = ?" , parameter1, parameter2)
+sql = <<-SQL
+  "SELECT *
+  FROM table
+  WHERE attribute1 = ?
+  AND attribute2 = ?"
+  SQL
+
+DB_connection.execute(sql, parameter1, parameter2)
 {% endhighlight %}
 
  **PostGreSQL**
 {% highlight ruby %}
-DB_connection.exec_params("SELECT * FROM table WHERE attribute1 = $1 AND attribute2 = $2" , [parameter1, parameter2])
+sql = <<-SQL
+  "SELECT *
+  FROM table
+  WHERE attribute1 = $1
+  AND attribute2 = $2"
+  SQL
+
+DB_connection.exec_params(sql, [parameter1, parameter2])
 {% endhighlight %}
 
  **ActiveRecord**
