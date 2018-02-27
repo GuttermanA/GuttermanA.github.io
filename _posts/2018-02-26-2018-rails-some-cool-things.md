@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails: Custom Slugs and Params for Rails"
+title:  "Rails: Custom Slugs and Params"
 date:   2018-02-26 08:15:00
 categories: Ruby, Rails, Project
 published: true
