@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Some Ruby Syntatic Sugar and Other Cool Tricks"
-date:   2018-02-05 08:15:00
+title:  "Ruby: Some Syntatic Sugar and Other Cool Tricks"
+date:   2018-02-26 08:15:00
 categories: Ruby, beginners, syntatic sugar
 published: true
 future: true

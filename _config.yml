@@ -16,7 +16,7 @@
 title: Alexander Gutterman's Blog
 email: alexander.gutterman@flatironschool.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Alexander Gutterman's blog for Flatiron School
+  Data analyst turned web developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://guttermana.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
