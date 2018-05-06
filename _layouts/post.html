@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: default
 ---
@@ -16,3 +17,23 @@ layout: default
 	  </div>
 	</article>
 </div>
+=======
+---
+layout: default
+---
+{%- include header.html -%}
+
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
+</div>
+>>>>>>> f801a3e976dd13850500f5b7ddbb03e1817d8b7e
