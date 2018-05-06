@@ -40,7 +40,7 @@ avatar: assets/images/avatar.jpg
 icon: assets/images/binbash.jpg
 banner: assets/images/JSBanner.png
 # You'll want to customize url and baseurl for your own site:
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://guttermana.github.io" # the base hostname & protocol for your site
 
 # Social settings
@@ -57,5 +57,6 @@ twitter_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+# theme: jekyll-theme-prologue
+remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
