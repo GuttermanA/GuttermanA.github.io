@@ -1,10 +1,10 @@
 ---
-layout: post
 title:  "SQL: Temporary Tables and Query Efficiency"
 date:   2018-01-22 09:15:00
 categories: SQL, Temporary Tables, StackExchange
 published: true
 future: true
+layout: post
 ---
 
 During my 3 years working with SQL, one of the most effective tools I learned for increasing query execution speed is the temporary table. Temp tables are created from existing tables in a database and can be generally used to process intermediate results in more complex queries. They are unique in the respect that they are created in a temp database parallel to the working databases and are deleted after the connection to the database is closed.

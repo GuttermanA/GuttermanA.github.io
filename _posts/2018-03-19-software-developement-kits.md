@@ -2,7 +2,7 @@
 layout: post
 title:  "Software Development Kits (SDKs)"
 date:   2018-03-19 08:15:00
-categories: SDKs, APIs, Javacript
+categories: SDKs, APIs, JavaScript
 published: true
 future: true
 ---

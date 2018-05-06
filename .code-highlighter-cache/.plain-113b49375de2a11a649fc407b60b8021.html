@@ -1,0 +1,15 @@
+{% raw %}<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;Droppable droppableId="search-results" type="MOVIE" isDropDisabled>
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>    &#x7b;(provided, snapshot) => (
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;div
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>        ref=&#x7b;provided.innerRef&#x7d;
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>        style=&#x7b;getListStyle(snapshot.isDraggingOver)&#x7d;
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b;...provided.droppableProps&#x7d;
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b;...provided.dragHandleProps&#x7d;
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>      >
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>        &lt;Card.Group itemsPerRow=&#x7b;4&#x7d;>
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>          &#x7b;movies&#x7d;
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b;provided.placeholder&#x7d;
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;/Card.Group>
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;/div>
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>    )&#x7d;
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;/Droppable></div></div></pre></div></figure>{% endraw %}

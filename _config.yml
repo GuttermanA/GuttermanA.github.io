@@ -1,3 +1,20 @@
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory. Please note that the following lines are
+# NECESSARY for Prologue to work correctly:
+#
+# theme: jekyll-theme-prologue
+# collections: [sections]
+#
+# They activate the theme and tell Jekyll to find your homepage content
+# in /_sections. Note where "sections" starts with an underscore
+# and where it doesn't. The social settings will make links to
+# Twitter, etc., but only if you give the URL.
+#
+# Also, be sure to customize url and baseurl for your site.
+#
+# ---------------------------------------------------------------
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -13,33 +30,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Alexander Gutterman's Blog
-email: alexander.gutterman@flatironschool.com
+title: Alexander Gutterman
+subtitle: Full Stack Web Developer
 description: >- # this means to ignore newlines until "baseurl:"
-  Data analyst turned web developer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://guttermana.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:  GuttermanA
+  Full Stack Web Developer
+author: Alexander Gutterman
+email: alexanderf.gutterman@gmail.com
+avatar: assets/images/avatar.jpg
+icon: assets/images/binbash.jpg
+banner: assets/images/JSBanner.png
+# You'll want to customize url and baseurl for your own site:
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://guttermana.github.io/" # the base hostname & protocol for your site
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+# Social settings
+facebook_url:
+github_url: https://github.com/GuttermanA
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/alexander-gutterman-0186a94b/
+pinterest_url:
+slack_url:
+twitter_url:
 
+# Google Analytics Tracking ID goes here:
+google_analytics:
 
-# Other settings
-timezone: America/New_York
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# The following settings are NECESSARY for the Prologue theme to run:
+theme: jekyll-theme-prologue
+collections: [sections]

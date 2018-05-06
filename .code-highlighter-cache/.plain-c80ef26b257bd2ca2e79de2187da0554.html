@@ -1,0 +1,17 @@
+{% raw %}<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;Draggable draggableId=&#x7b;props.id&#x7d; type="MOVIE" index=&#x7b;props.index&#x7d;>
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>  &#x7b;(provided, snapshot) => (
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>    &lt;div>
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;div
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>        ref=&#x7b;provided.innerRef&#x7d;
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b;...provided.draggableProps&#x7d;
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b;...provided.dragHandleProps&#x7d;
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>      >
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;Card onClick=&#x7b;handleClick&#x7d; style=&#x7b;&#x7b;maxWidth: 'none'&#x7d;&#x7d;>
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>        &lt;Image src=&#x7b;poster&#x7d; />
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>        &#x7b; props.fromWhere !== "MovieList" ? &lt;Icon name='delete' inverted size="large" circular onClick=&#x7b;handleDelete&#x7d;/> : null&#x7d;
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>      &lt;/Card>
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>    &lt;/div>
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>    &#x7b;provided.placeholder&#x7d;
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>  &lt;/div>
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'>  )&#x7d;
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;/Draggable></div></div></pre></div></figure>{% endraw %}

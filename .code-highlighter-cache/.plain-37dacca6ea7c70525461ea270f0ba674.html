@@ -1,0 +1,27 @@
+{% raw %}<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>onDragEnd = result => &#x7b;
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>  // Prevents breaking when the Draggable does not end in a valid Droppable
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>  if (!result.destination && result.source.droppableId === "search-results") &#x7b;
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>    return;
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>  &#x7d;
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>  // Checks the type of Droppable
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>  if (result.source.droppableId === "list") &#x7b;
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>    //Logic to remove from list if Draggable is dropped
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>    //outside of a valid Draggable
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>    if (result.destination === null) &#x7b;
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>      let foundMovie = this.props.movies.find(
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>        movie => movie.id === parseInt(result.draggableId.split("-")[1])
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>      );
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>      this.props.removeFromList(foundMovie);
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'>      return;
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'>    &#x7d;
+</div></div><div data-line='19' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='20' class='code-highlight-row numbered'><div class='code-highlight-line'>    // Function that reorders list by taking in array, the Draggable start
+</div></div><div data-line='21' class='code-highlight-row numbered'><div class='code-highlight-line'>    //index and end index
+</div></div><div data-line='22' class='code-highlight-row numbered'><div class='code-highlight-line'>    const favoriteList = reorder(
+</div></div><div data-line='23' class='code-highlight-row numbered'><div class='code-highlight-line'>      this.props.favoriteList,
+</div></div><div data-line='24' class='code-highlight-row numbered'><div class='code-highlight-line'>      result.source.index,
+</div></div><div data-line='25' class='code-highlight-row numbered'><div class='code-highlight-line'>      result.destination.index
+</div></div><div data-line='26' class='code-highlight-row numbered'><div class='code-highlight-line'>    );
+</div></div><div data-line='27' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='28' class='code-highlight-row numbered'><div class='code-highlight-line'>    // Update state with reordered list
+</div></div><div data-line='29' class='code-highlight-row numbered'><div class='code-highlight-line'>    this.props.updateFavoriteList(favoriteList);
+</div></div><div data-line='30' class='code-highlight-row numbered'><div class='code-highlight-line'>  &#x7d;
+</div></div><div data-line='31' class='code-highlight-row numbered'><div class='code-highlight-line'>&#x7d;;</div></div></pre></div></figure>{% endraw %}

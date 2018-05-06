@@ -1,0 +1,33 @@
+{% raw %}<figure class='code-highlight-figure'><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;DragDropContext onDragStart=&#x7b;this.onDragStart&#x7d; onDragUpdate=&#x7b;this.onDragUpdate&#x7d; onDragEnd=&#x7b;this.onDragEnd&#x7d;>
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'>  &lt;Droppable droppableId="search-results" type="MOVIE" isDropDisabled>
+</div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'>      &#x7b;(provided, snapshot) => (
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'>        &lt;div
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>          ref=&#x7b;provided.innerRef&#x7d;
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>          style=&#x7b;getListStyle(snapshot.isDraggingOver)&#x7d;
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'>          &#x7b;...provided.droppableProps&#x7d;
+</div></div><div data-line='8' class='code-highlight-row numbered'><div class='code-highlight-line'>          &#x7b;...provided.dragHandleProps&#x7d;
+</div></div><div data-line='9' class='code-highlight-row numbered'><div class='code-highlight-line'>        >
+</div></div><div data-line='10' class='code-highlight-row numbered'><div class='code-highlight-line'>          &lt;Card.Group itemsPerRow=&#x7b;4&#x7d;>
+</div></div><div data-line='11' class='code-highlight-row numbered'><div class='code-highlight-line'>            &lt;Draggable draggableId=&#x7b;props.id&#x7d; type="MOVIE" index=&#x7b;props.index&#x7d;>
+</div></div><div data-line='12' class='code-highlight-row numbered'><div class='code-highlight-line'>              &#x7b;(provided, snapshot) => (
+</div></div><div data-line='13' class='code-highlight-row numbered'><div class='code-highlight-line'>                &lt;div>
+</div></div><div data-line='14' class='code-highlight-row numbered'><div class='code-highlight-line'>                  &lt;div
+</div></div><div data-line='15' class='code-highlight-row numbered'><div class='code-highlight-line'>                    ref=&#x7b;provided.innerRef&#x7d;
+</div></div><div data-line='16' class='code-highlight-row numbered'><div class='code-highlight-line'>                    &#x7b;...provided.draggableProps&#x7d;
+</div></div><div data-line='17' class='code-highlight-row numbered'><div class='code-highlight-line'>                    &#x7b;...provided.dragHandleProps&#x7d;
+</div></div><div data-line='18' class='code-highlight-row numbered'><div class='code-highlight-line'>                  >
+</div></div><div data-line='19' class='code-highlight-row numbered'><div class='code-highlight-line'>                  &lt;Card onClick=&#x7b;handleClick&#x7d; style=&#x7b;&#x7b;maxWidth: 'none'&#x7d;&#x7d;>
+</div></div><div data-line='20' class='code-highlight-row numbered'><div class='code-highlight-line'>                    &lt;Image src=&#x7b;poster&#x7d; />
+</div></div><div data-line='21' class='code-highlight-row numbered'><div class='code-highlight-line'>                    &#x7b; props.fromWhere !== "MovieList" ? &lt;Icon name='delete' inverted size="large" circular onClick=&#x7b;handleDelete&#x7d;/> : null&#x7d;
+</div></div><div data-line='22' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='23' class='code-highlight-row numbered'><div class='code-highlight-line'>                  &lt;/Card>
+</div></div><div data-line='24' class='code-highlight-row numbered'><div class='code-highlight-line'>                &lt;/div>
+</div></div><div data-line='25' class='code-highlight-row numbered'><div class='code-highlight-line'>                &#x7b;provided.placeholder&#x7d;
+</div></div><div data-line='26' class='code-highlight-row numbered'><div class='code-highlight-line'>              &lt;/div>
+</div></div><div data-line='27' class='code-highlight-row numbered'><div class='code-highlight-line'>              )&#x7d;
+</div></div><div data-line='28' class='code-highlight-row numbered'><div class='code-highlight-line'>            &lt;/Draggable>
+</div></div><div data-line='29' class='code-highlight-row numbered'><div class='code-highlight-line'>            &#x7b;provided.placeholder&#x7d;
+</div></div><div data-line='30' class='code-highlight-row numbered'><div class='code-highlight-line'>        &lt;/Card.Group>
+</div></div><div data-line='31' class='code-highlight-row numbered'><div class='code-highlight-line'>        &lt;/div>
+</div></div><div data-line='32' class='code-highlight-row numbered'><div class='code-highlight-line'>      )&#x7d;
+</div></div><div data-line='33' class='code-highlight-row numbered'><div class='code-highlight-line'>  &lt;/Droppable>
+</div></div><div data-line='34' class='code-highlight-row numbered'><div class='code-highlight-line'>&lt;/DragDropContext></div></div></pre></div></figure>{% endraw %}

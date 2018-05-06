@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Ruby: Some Syntatic Sugar and Other Cool Tricks"
+title:  "Ruby: Some Syntactic Sugar and Other Cool Tricks"
 date:   2018-02-26 08:15:00
-categories: Ruby, beginners, syntatic sugar
+categories: Ruby, beginners, syntactic sugar
 published: true
 future: true
 ---
@@ -28,7 +28,7 @@ array.map {|n| n + 1}
 ### Comparing Arrays
 Continuing on array functions, comparing arrays can be done like this:
 
-{% highlight ruby linenos %}
+{% highlight ruby  %}
 a =  ["a", "b", "c", "d" ]
 b = [ "c", "d", "e", "f"]
 c = []
@@ -61,7 +61,7 @@ The \|\| operator in Ruby  has many more uses than just simply comparing values 
 
 These can be used to change the output of a method:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 def self.login
   puts "Please enter your username: "
   username = gets.chomp.split(" ").map{|w| w.capitalize}.join(" ")
@@ -71,7 +71,7 @@ end
 
 The example above is taken from my first project at Flatiron School. The method is used to log a user in to a simple Command Line Interface (CLI) application using ActiveRecord. The magic happens on the final line. In this case, \|\| is acting as an if/else statement. It still follows the rules of the operator, but of values we are passing methods.
 
-If {% highlight ruby %} self.find_by(name: username) {% endhighlight %} evaluates to true, it returns the user in the database. If it evaluates to false, the method is called again until a correct entry is received.
+If ```self.find_by(name: username)``` evaluates to true, it returns the user in the database. If it evaluates to false, the method is called again until a correct entry is received.
 
 Another cool feature of the \|\| operator can be used to set values of variables:
 
@@ -79,7 +79,7 @@ Another cool feature of the \|\| operator can be used to set values of variables
 a = nil
 b = 20
 a ||= b
-a        # => 20
+# a => 20
 {% endhighlight %}
 
 In the example above, the value of a will be set to b since it is nil, and therefore a falsey value. If instead a has a value, it will retain that value since \|\| will always return the value on the left it is truthy, ignoring the value on the right completely.
@@ -88,7 +88,7 @@ In the example above, the value of a will be set to b since it is nil, and there
 a = 10
 b = 20
 a ||= b
-a        # => 10
+# a  => 10
 {% endhighlight %}
 
 ### A Shortcut to Modifying Arrays
@@ -97,7 +97,7 @@ If you spend enough time on StackOverflow, you will notice that answers about mo
 
 For example, if you want to capitalize every string in an array, you could write a method like this:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 array = [ "apple", "orange", "pear"]
 array.map do |x|
   x.capitlize
@@ -107,7 +107,7 @@ end
 
 Instead, you can write the method like so:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 array = [ "apple", "orange", "pear"]
 array.map(&:capitlize)
 #=> [ "Apple", "Orange", "Pear"]
@@ -119,7 +119,7 @@ Essentially, the above syntax is using the passed method, in this case capitaliz
 
 In my first project at Flatiron, my partner and I encountered an interesting challenge of moving between menus of our CLI application. We wanted to give the user the ability to return the previous menu or main menu in a direct way. We were able to implement this functionality using the following logic:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 class Cli
   def initialize
     @previous_menu = nil
@@ -152,7 +152,7 @@ This syntax gets around the fact that Ruby implicitly calls the method when you 
 
 If you have used active record, you will be familiar with the concept of mass assignment. Simply put, ruby allows parameters of methods to be passed as a hash, as long as the parameters in the method are symbols, like so:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 person = {name: "Bob", age: 50}
 
 def print_person_info(name:, age:)
