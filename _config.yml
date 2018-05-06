@@ -76,7 +76,7 @@ avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "guttermana.github.io" # the base hostname & protocol for your site
 
 # Social settings
 facebook_url:
