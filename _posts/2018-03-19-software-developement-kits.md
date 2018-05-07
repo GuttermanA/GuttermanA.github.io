@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Software Development Kits (SDKs)"
+title:  "Software Development Kits"
 date:   2018-03-19 08:15:00
 categories: SDKs, APIs, JavaScript
 published: true
 future: true
 ---
-
 Today I am going to give a general overview of Software Development Kits (SDKs). SDKs are the more developed cousins of APIs. An API is an interface that allows software to interact with other software. They are mainly used as ways to get and store data from an application. An API has certain URL endpoints and commands that allow a developer to interact with an applications data.
 
 An SDK goes a step further and provides developers both with the functionality of an API and tools they can use to build their app for a specific platform. A good analogy for an SDK is a model car kit. You both need the parts in the kit and specialized tools to build the model car. The SDK can be seen as the parts and the tools wrapped into a single package.

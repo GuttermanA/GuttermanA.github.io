@@ -6,10 +6,6 @@ categories: Ruby, Rails, Project
 published: true
 future: true
 ---
-
-{% highlight ruby %}
-{% endhighlight %}
-
 My first Rails project at Flatiron School presented some unique challenges for my partner and I to solve. This blog post will go over some of these challenges and how we solved them. Hopefully it can be a resource to other beginner Rails developers in taking their projects to the next level. If you want to take look the final product of my Module 2 project, you can find it [here](https://would-you-rather-game.herokuapp.com/).
 
 ## Vanity URLs Using Custom Slugs

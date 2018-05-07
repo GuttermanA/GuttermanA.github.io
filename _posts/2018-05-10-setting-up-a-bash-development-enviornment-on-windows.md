@@ -6,7 +6,6 @@ categories: Windows, Linux, Bash, Environment
 published: false
 future: true
 ---
-
 Getting started: https://char.gd/blog/2017/how-to-set-up-the-perfect-modern-dev-environment-on-windows
 
 heroku: https://devcenter.heroku.com/articles/heroku-cli

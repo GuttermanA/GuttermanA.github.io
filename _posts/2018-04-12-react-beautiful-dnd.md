@@ -6,8 +6,6 @@ categories: React, React Beautiful Drag and Drop, Drag and Drop, JavaScript
 published: true
 future: true
 ---
-
-
 Today I am going to discuss setting up the React Beautiful Drag and Drop library. I used this library in my first React project. As disclaimed in the documentation, this drag and drop is only for ordered lists. While it was a pain to setup, once it was working it worked well for its intended purpose. However, the same cannot be said of the documentation, which does not contain enough examples to make it easy to use. As a result, me and my partner struggled for an entire day to implement drag and drop in our project.
 
 Example:
