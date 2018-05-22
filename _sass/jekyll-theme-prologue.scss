@@ -205,6 +205,19 @@
 		clear: both;
 	}
 
+/* Portfolio */
+
+	.portfolio-row {
+		display: flex;
+	}
+
+	.center {
+		// display: inline-block;
+		// display: block;
+		margin: 0 auto;
+		// align-content: center;
+	}
+
 /* Sections/Article */
 
 	section, article {
@@ -467,6 +480,8 @@
 				font-size: 1em;
 			}
 		}
+
+
 	}
 
 /* Icons */
