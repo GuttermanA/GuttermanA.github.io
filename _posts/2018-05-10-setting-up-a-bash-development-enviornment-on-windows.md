@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Setting up a Web Development Environment on Windows"
-date:   2018-05-10 08:15:00
+date:   2018-06-22 08:15:00
 categories: Windows, Linux, Bash, Environment
-published: true
+published: false
 future: false
 ---
 
@@ -33,14 +33,14 @@ To install WSL, you must have the Windows 10 Creator Update, then you're ready t
 ```
 Settings > Update & Security > For developers
 ```
-![devmode](/assets/images/devmode.jpg)
+<!-- ![devmode](/assets/images/devmode.jpg) -->
 <!-- <img src="/assets/images/devmode.jpg" alt="devmode" width="0.25vm"><img/> -->
 
 2. Install Windows Subsystem for Linux package
 ```
 Settings > Apps & Features > Programs and Features > Turn Windows features on and off > Windows Subsystem for Linux
 ```
-![ubuntu](/assets/images/ubuntu_windows_2.jpg)
+<!-- ![ubuntu](/assets/images/ubuntu_windows_2.jpg) -->
 
 3. Reboot
 
