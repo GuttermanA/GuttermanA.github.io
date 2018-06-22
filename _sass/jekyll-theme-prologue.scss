@@ -579,7 +579,8 @@
 		}
 
 		.image {
-			position: absolute;
+			position: relative;
+			float: left;
 			left: 0;
 			top: 0;
 		}
@@ -609,7 +610,8 @@
 						font-size: 0.8em;
 
 						&:before {
-							position: absolute;
+							position: relative;
+							float: left;
 							left: 0;
 							color: #41484c;
 							text-align: center;
