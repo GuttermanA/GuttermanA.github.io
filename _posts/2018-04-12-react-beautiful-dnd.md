@@ -23,11 +23,15 @@ As with any JavaScript library, you need to add it as a dependency to your proje
 
 For this library to work, all of the react components where drag and drop will be implemented need to be wrapped in a DragDropContext. It may be easiest to just wrap your entire app with the component to ensure you have the functionality anywhere you need it. For DragDropContext to function correctly, it requires a callback to be passed to an onDragEnd event.
 
-```
-<DragDropContext onDragStart={this.onDragStart} onDragUpdate={this.onDragUpdate} onDragEnd={this.onDragEnd}>
-CONTENT
+{% highlight JSX %}
+<DragDropContext
+  onDragStart={this.onDragStart}
+  onDragUpdate={this.onDragUpdate}
+  onDragEnd={this.onDragEnd}
+>
+  CONTENT
 </DragDropContext>
-```
+{% endhighlight %}
 
 onDragEnd is where the state of the list will be updated, whether an item is added, removed, or rearranged in this list. Optionally, you can also add callbacks for the onDragStart and onDragUpdate events. For my simple example, these were not required.
 
@@ -35,7 +39,7 @@ onDragEnd is where the state of the list will be updated, whether an item is add
 
 Next, you will have to set up your Droppable area inside of your DragDropContext. Droppable will wrap your Draggable components and give them a place on the DOM where they can be rearranged and dropped into.
 
-```
+{% highlight JSX linenos %}
 <Droppable droppableId="search-results" type="MOVIE" isDropDisabled>
     {(provided, snapshot) => (
       <div
@@ -51,7 +55,7 @@ Next, you will have to set up your Droppable area inside of your DragDropContext
       </div>
     )}
 </Droppable>
-```
+{% endhighlight %}
 
 Droppable has 3 main props you should be aware of: droppableId, type, and isDropDisabled.
 
@@ -63,7 +67,7 @@ Droppable must also contain a callback that returns a <div> with all of the prop
 
 The Draggable is the component that a user can actually drag and drop on the page. This contains any JSX to style the component wrapped inside of a Draggable component, similar to the Droppable component.
 
-```
+{% highlight JSX linenos %}
 <Draggable draggableId={props.id} type="MOVIE" index={props.index}>
   {(provided, snapshot) => (
     <div>
@@ -82,7 +86,7 @@ The Draggable is the component that a user can actually drag and drop on the pag
   </div>
   )}
 </Draggable>
-```
+{% endhighlight %}
 
 Similar to the Droppable, the Draggable has a draggableId and a type. Both of these function the same way as they do in the Droppable: draggableId can be refernced in your dragging callbacks and type allows you to define which Droppables the Draggable can be placed into. Additionally, the Draggable needs an index prop so you can update your state correctly in your onDragEnd callback.
 
@@ -92,7 +96,7 @@ As shown in the snippet above, the Droppable must contain a function that return
 
 Your final setup should look something like this:
 
-```
+{% highlight JSX linenos %}
 <DragDropContext onDragStart={this.onDragStart} onDragUpdate={this.onDragUpdate} onDragEnd={this.onDragEnd}>
   <Droppable droppableId="search-results" type="MOVIE" isDropDisabled>
       {(provided, snapshot) => (
@@ -126,14 +130,13 @@ Your final setup should look something like this:
         </div>
       )}
   </Droppable>
-</DragDropContext>
-```
+{% endhighlight %}
 
 The final piece that makes everything work is your onDragEnd callback. This is where all of your logic goes dictating how your drag and drop React components interact with each other.
 
 See below for a commented snippet.
 
-```
+{% highlight JavaScript linenos %}
 onDragEnd = result => {
 
   // Prevents breaking when the Draggable does not end in a valid Droppable
@@ -165,12 +168,12 @@ onDragEnd = result => {
     this.props.updateFavoriteList(favoriteList);
   }
 };
-```
+
+{% endhighlight %}
 
 I hope this breakdown can be of help to anyone to start there way on using the React Beautiful DND library. Project example and documentation will be linked below.
 
 ### Resources
 
-[Documentation](https://github.com/atlassian/react-beautiful-dnd)
-
-[Project with example code](https://github.com/GuttermanA/favorite-lister)
+* [Documentation](https://github.com/atlassian/react-beautiful-dnd)
+* [Project with example code](https://github.com/GuttermanA/favorite-lister)

@@ -1,0 +1,150 @@
+/*
+  Darkly Pygments Theme
+  (c) 2014 Sourcey
+  http://sourcey.com
+*/
+
+.highlight {
+  // white-space: 'code-pre';
+  overflow: auto;
+  word-wrap: normal; /* horizontal scrolling */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  // padding: 20px;
+  background: #343642;
+  color: #C1C2C3;
+}
+.highlight .hll { background-color: #ffc; }
+.highlight .gd { color: #2e3436; background-color: #0e1416; }
+.highlight .gr { color: #eeeeec; background-color: #c00; }
+.highlight .gi { color: #babdb6; background-color: #1f2b2d; }
+.highlight .go { color: #2c3032; background-color: #2c3032; }
+.highlight .kt { color: #e3e7df; }
+.highlight .ni { color: #888a85; }
+.highlight .c,.highlight .cm,.highlight .c1,.highlight .cs { color: #8D9684; }
+.highlight .err,.highlight .g,.highlight .l,.highlight .n,.highlight .x,.highlight .p,.highlight .ge,
+.highlight .gp,.highlight .gs,.highlight .gt,.highlight .ld,.highlight .s,.highlight .nc,.highlight .nd,
+.highlight .ne,.highlight .nl,.highlight .nn,.highlight .nx,.highlight .py,.highlight .ow,.highlight .w,.highlight .sb,
+.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,
+.highlight .s1,.highlight .ss,.highlight .bp { color: #C1C2C3; }
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,
+.highlight .nt { color: #729fcf; }
+.highlight .cp,.highlight .gh,.highlight .gu,.highlight .na,.highlight .nf { color: #E9A94B ; }
+.highlight .m,.highlight .nb,.highlight .no,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,
+.highlight .il { color: #8ae234; }
+.highlight .o { color: #989DAA; }
+.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
+
+/* JSX */
+
+$color00: #1B2B34;
+$color01: #CDD3DE;
+$color02: #93a1a1;
+$color03: #99C794;
+$color04: #EC5F67;
+$color05: #FAC863;
+$color06: #C594C5;
+$color07: #6699CC;
+$color08: #b58900;
+
+// Inline code snippets
+code {
+    font-family: 'Menlo', 'Source Code Pro', serif;
+    font-size: 0.8em;
+    background: #f2f2f2;
+    // padding: 3px 6px;
+}
+
+// Code blocks
+pre code {
+    padding: 0;
+    background: none;
+    font-size: 13px;
+    // white-space: pre;
+    // white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin: 0 !important;
+}
+
+.highlight     {
+    background: $color00;
+    border-radius: 5px;
+    line-height: 20px;
+    // padding: 20px;
+    margin: 1.4rem 0;
+    // font-family: $monoFontFamily;
+
+    pre code {
+        color: $color01;
+    }
+
+    .c  { color: $color02; }
+    .g  { color: $color01; }
+    .k  { color: $color03; }
+    .l  { color: $color01; }
+    .n  { color: $color01; }
+    .o  { color: $color03; }
+    .p  { color: $color01; }
+    .x  { color: $color04; }
+    .cm { color: $color02; }
+    .cp { color: $color03; }
+    .c1 { color: $color02; }
+    .cs { color: $color03; }
+    .gd { color: $color05; }
+    .ge { color: $color01; font-style: italic; }
+    .gr { color: $color06; }
+    .gh { color: $color04; }
+    .gi { color: $color03; }
+    .go { color: $color01; }
+    .gp { color: $color01; }
+    .gs { color: $color01; font-weight: bold; }
+    .gu { color: $color04; }
+    .gt { color: $color01; }
+    .kc { color: $color04; }
+    .kd { color: $color07; }
+    .kn { color: $color03; }
+    .kp { color: $color03; }
+    .kr { color: $color07; }
+    .kt { color: $color06; }
+    .ld { color: $color01; }
+    .m  { color: $color05; }
+    .s  { color: $color05; }
+    .na { color: $color01; }
+    .nb { color: $color08; }
+    .nc { color: $color07; }
+    .no { color: $color04; }
+    .nd { color: $color07; }
+    .ni { color: $color04; }
+    .ne { color: $color04; }
+    .nf { color: $color07; }
+    .nl { color: $color01; }
+    .nn { color: $color01; }
+    .nx { color: $color01; }
+    .py { color: $color01; }
+    .nt { color: $color07; }
+    .nv { color: $color07; }
+    .ow { color: $color03; }
+    .w  { color: $color01; }
+    .mf { color: $color05; }
+    .mh { color: $color05; }
+    .mi { color: $color05; }
+    .mo { color: $color05; }
+    .sb { color: $color02; }
+    .sc { color: $color05; }
+    .sd { color: $color01; }
+    .s2 { color: $color05; }
+    .se { color: $color04; }
+    .sh { color: $color01; }
+    .si { color: $color05; }
+    .sx { color: $color05; }
+    .sr { color: $color06; }
+    .s1 { color: $color05; }
+    .ss { color: $color05; }
+    .bp { color: $color07; }
+    .vc { color: $color07; }
+    .vg { color: $color07; }
+    .vi { color: $color07; }
+    .il { color: $color05; }
+}

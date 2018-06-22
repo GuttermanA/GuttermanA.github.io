@@ -1,6 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/syntax-highlighting';
 @charset "UTF-8";
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
@@ -171,12 +172,13 @@
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		tab-size: 4;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		code {
 			display: block;
 			line-height: 1.5;
 			padding: 0.75em 1em;
 			overflow-x: auto;
+			margin: 0;
 		}
 	}
 
@@ -187,7 +189,7 @@
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table {
+	p, ul, ol, dl {
 		margin-bottom: 2em;
 	}
 
