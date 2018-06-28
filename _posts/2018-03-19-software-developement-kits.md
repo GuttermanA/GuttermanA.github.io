@@ -120,7 +120,7 @@ module.exports = function (type) {
 
 **B. Define functions**
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
     // Gets a resource by its id.
     find: function find(id) {
       return request({
