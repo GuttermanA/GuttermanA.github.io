@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Introduction to Data Structures in JavaScript"
-date:   2018-08-20 16:15:00
+date:   2018-08-22 16:15:00
 categories: JavaScript, Computer Science, Data Structures
 published: true
 future: false
