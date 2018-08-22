@@ -175,7 +175,7 @@ The default username for any postgresql database is postrges. Just replace the p
 
 ## There is Still More to Do...
 
-I am out of time for writing this post, but in my next post I will cover a few additional things to complete your setup of you web dev enviroment with:
+I am out of time for writing this post, but in my next post I will cover a few additional things to complete your setup of you web dev environment with:
 
 * Bash profiles
 * Heroku CLI
