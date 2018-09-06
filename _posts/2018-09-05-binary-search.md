@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Search in JavaScript"
-date:   2018-09-05 23:00:00
+date:   2018-09-05 20:30:00
 categories: JavaScript, Computer Science, Algorithms, Search, Big O
 published: true
 future: false
